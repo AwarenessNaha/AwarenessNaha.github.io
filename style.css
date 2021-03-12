@@ -1,0 +1,5 @@
+p{
+    color: rgb(255, 255, 255);
+    background-color: yellow;
+    border: 5px solid hsl(0, 50%, 40%);
+}
