@@ -8,5 +8,12 @@ function pageLoad() {
 }
 function okClick() {
     alert(" You clicked ok!!");
+    const okButton = document.getElementById("ok");
+    okButton.className = "fancy";
+    setTimeout(reset, 3000);
+}
+function reset() {
+    const okButton = document.getElementById("ok");
+    okButton.className = "";
 }
 window.onload = pageLoad;  // onload is a browser event
