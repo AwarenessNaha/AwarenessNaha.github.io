@@ -10,7 +10,7 @@ function okClick() {
     alert(" You clicked ok!!");
     const okButton = document.getElementById("ok");
     okButton.className = "fancy";
-    setTimeout(reset, 3000);
+    setTimeout(reset, 2000);
 }
 function reset() {
     const okButton = document.getElementById("ok");
