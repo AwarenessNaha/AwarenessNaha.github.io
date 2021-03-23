@@ -1,7 +1,7 @@
 "use strict";
 
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
-module.exports = { maxOfThree, sum, multiply, findLongestWord, reverseArray, reverseArrayInPlace, scoreExams }; //add all of your function names here that you need for the node mocha tests
+// module.exports = { maxOfThree, sum, multiply, findLongestWord, reverseArray, reverseArrayInPlace, scoreExams }; //add all of your function names here that you need for the node mocha tests
 
 /**
  * 
@@ -22,10 +22,10 @@ function maxOfThree(a, b, c) {
     }
 }
 
-console.log(maxOfThree(1, 2, 3));
-console.log(maxOfThree(10, 30, 20));
-console.log(maxOfThree(-1, -2, -3));
-console.log(maxOfThree(333, 111, 22));
+// console.log(maxOfThree(1, 2, 3));
+// console.log(maxOfThree(10, 30, 20));
+// console.log(maxOfThree(-1, -2, -3));
+// console.log(maxOfThree(333, 111, 22));
 
 /**
  * 
@@ -55,10 +55,10 @@ function multiply(arr) {
 
 }
 
-console.log(sum([1, 2, 3]));
-console.log(multiply([3, 2, 10]));
-//console.log(maxOfThree(-1, -2, -3));
-//console.log(maxOfThree(333, 111, 22));
+// console.log(sum([1, 2, 3]));
+// console.log(multiply([3, 2, 10]));
+// //console.log(maxOfThree(-1, -2, -3));
+// //console.log(maxOfThree(333, 111, 22));
 
 // Q3
 /**
@@ -75,8 +75,8 @@ function findLongestWord(str) {
     }
     return longest;
 }
-console.log(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]));
-console.log(findLongestWord(["this", "is", "a", "test", "longest"]));
+// console.log(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]));
+// console.log(findLongestWord(["this", "is", "a", "test", "longest"]));
 
 //Q4
 /**
@@ -107,12 +107,18 @@ function reverseArrayInPlace(arr) {
     return reversed;
 }
 
-console.log(reverseArray(["A", "B", "C"]));
-console.log(reverseArray(["A", "B", "C", "D"]));
-console.log(reverseArrayInPlace(["A", "B", "C", "D"]));
-console.log(reverseArrayInPlace([1, 2, 3, 4, 5]));
+// console.log(reverseArray(["A", "B", "C"]));
+// console.log(reverseArray(["A", "B", "C", "D"]));
+// console.log(reverseArrayInPlace(["A", "B", "C", "D"]));
+// console.log(reverseArrayInPlace([1, 2, 3, 4, 5]));
 
 //Q5
+/**
+ * 
+ * @param {array} studentAnswers a given array
+ * @param {array} correctAnswers a given array
+ * @returns {array} a return array of score
+ */
 function scoreExams(studentAnswers, correctAnswers) {
     const score = [];
     for (const answers of studentAnswers) {
@@ -128,6 +134,6 @@ function scoreExams(studentAnswers, correctAnswers) {
     }
     return score;
 }
-const studentAnswers = [[1, 1, 2], [2, 1, 2], [3, 1, 3]];
-const correctAnswers = [3, 1, 2];
-console.log(scoreExams(studentAnswers, correctAnswers));
+// const studentAnswers = [[1, 1, 2], [2, 1, 2], [3, 1, 3]];
+// const correctAnswers = [3, 1, 2];
+// console.log(scoreExams(studentAnswers, correctAnswers));
