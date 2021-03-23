@@ -8,6 +8,10 @@ const myExports = require("./app.js");  //with node need the name of your file w
 const maxOfThree = myExports.maxOfThree;  //do this for all of the functions used in the Mocha tests
 const multiply = myExports.multiply;
 const sum = myExports.sum;
+const findLongestWord = myExports.findLongestWord;
+const reverseArray = myExports.reverseArray;
+const reverseArrayInPlace = myExports.reverseArrayInPlace;
+const scoreExams = myExports.scoreExams;
 
 
 /* global assert maxOfThree sum multiply findLongestWord reverseArray reverseArrayInPlace scoreExams */
@@ -52,7 +56,8 @@ describe("sum and multiply", function () {
 
 
 /*
-3.	Write a function findLongestWord() that takes an array of words and returns the length of the longest one. 
+3.	Write a function findLongestWord() that takes an array of words and returns the length 
+of the longest one. 
 */
 describe("findLongestWord", function () {
     it("tests longest", function () {
@@ -66,7 +71,12 @@ describe("findLongestWord", function () {
 
 /*
 4.	Reverse an Array 
-Arrays have a reverse method that changes the array by inverting the order in which its elements appear. For this exercise, write two functions, reverseArray and reverseArrayInPlace. The first, reverseArray, takes an array as argument and produces a new array that has the same elements in the inverse order. The second, reverseArrayInPlace, does what the reverse method does: it modifies the array given as argument by reversing its elements. Neither may use the standard reverse method. 
+Arrays have a reverse method that changes the array by inverting the order in which its elements 
+appear. For this exercise, write two functions, reverseArray and reverseArrayInPlace. 
+The first, reverseArray, takes an array as argument and produces a new array that has the 
+same elements in the inverse order. The second, reverseArrayInPlace, does what the reverse method 
+does: it modifies the array given as argument by reversing its elements. Neither may use 
+the standard reverse method. 
 */
 describe("reverseArray", function () {
     it("tests reverseArray odd number elements", function () {
@@ -92,8 +102,7 @@ const correctAnswers = [3, 1, 2];
 scoreExams(studentAnswers, correctAnswers)); --> [2, 2, 2]
 */
 /*
-4.	Reverse an Array 
-Arrays have a reverse method that changes the array by inverting the order in which its elements appear. For this exercise, write two functions, reverseArray and reverseArrayInPlace. The first, reverseArray, takes an array as argument and produces a new array that has the same elements in the inverse order. The second, reverseArrayInPlace, does what the reverse method does: it modifies the array given as argument by reversing its elements. Neither may use the standard reverse method. 
+
 */
 describe("score exam", function () {
     const studentAnswers = [[1, 1, 2], [2, 1, 2], [3, 1, 3]];
