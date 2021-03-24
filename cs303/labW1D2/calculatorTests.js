@@ -6,7 +6,7 @@
 
 
 describe("new calculator", function () {
- 
+
 
     it("checks initial values 2 and 3", function () {
         assert.strictEqual(calculator.a, 2);
@@ -23,5 +23,3 @@ describe("new calculator", function () {
 
 
 });
-
-
