@@ -104,12 +104,43 @@ function getMaxSubSum(arr) {
 }
 
 function camelize(str) {
-    let strArr = str.split("");
-    for (let i = strArr.length - 1; i >= 0; i--) {
-        if (strArr[i] === "-") {
-            strArr[i] = "";
+    let wordArr = str.split("-");
+    for (let i = 1; i < wordArr.length; i++) {
+        if (wordArr[i] === "") {
+            continue;
         }
+        wordArr[i] = ucFirst(wordArr[i]);
     }
-    return strArr.join("");
+    let lcFirstWordArr = lcFirst(wordArr.join(""));
+
+    return lcFirstWordArr;
 }
+
+function ucFirst(str) {
+    if (str.length === 0) {
+        return "";
+    }
+    let ucStr = "";
+    ucStr = str[0].toUpperCase() + str.slice(1);
+    return ucStr;
+}
+function lcFirst(str) {
+    if (str.length === 0) {
+        return "";
+    }
+    let lcStr = "";
+    lcStr = str[0].toLowerCase() + str.slice(1);
+    return lcStr;
+}
+
+// function camelize(str) {
+//     //let ucfStr = ucFirst(str);
+//     let strArr = str.split("");
+//     for (let i = strArr.length - 1; i >= 0; i--) {
+//         if (strArr[i] === "-") {
+//             strArr[i] = "";
+//         }
+//     }
+//     return strArr.join("");
+// }
 

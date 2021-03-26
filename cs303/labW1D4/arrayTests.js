@@ -109,15 +109,15 @@ describe("camelize", function () {
     });
 
     it("turns background-color into backgroundColor", function () {
-        assert.equal(camelize("background-color"), "backgroundcolor");
+        assert.equal(camelize("background-color"), "backgroundColor");
     });
 
     it("turns list-style-image into listStyleImage", function () {
-        assert.equal(camelize("list-style-image"), "liststyleimage");
+        assert.equal(camelize("list-style-image"), "listStyleImage");
     });
 
     it("turns -webkit-transition into WebkitTransition", function () {
-        assert.equal(camelize("-webkit-transition"), "webkittransition");
+        assert.equal(camelize("-webkit-transition"), "webkitTransition");
     });
 
 });
