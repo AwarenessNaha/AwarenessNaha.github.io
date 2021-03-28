@@ -145,13 +145,13 @@ describe("copySorted", function () {
 });
 
 describe("sortByAge", function () {
-    it("returns the filtered values", function () {
+    it("returns sorted by age", function () {
         let john = { name: "John", age: 25 };
         let pete = { name: "Pete", age: 30 };
         let mary = { name: "Mary", age: 28 };
         let arr = [pete, john, mary];
         sortByAge(arr);
-        assert.deepEqual(sorted, [john, mary, pete]);
+        assert.deepEqual(arr, [john, mary, pete]);
     });
 
     it("doesn't change the array", function () {
