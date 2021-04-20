@@ -108,3 +108,64 @@ function fibonacci(n) {
 
 // console.log(FibonacciNumbers(3));
 // console.log(FibonacciNumbers(5));
+
+/**
+ * Let’s say we have a single-linked list (as described in the chapter Recursion and stack):
+
+let list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3,
+      next: {
+        value: 4,
+        next: null
+      }
+    }
+  }
+};
+Write a function printList(list) that outputs list items one-by-one.
+
+Make two variants of the solution: using a loop and using recursion.
+
+What’s better: with recursion or without it?
+ */
+//using a loop
+function printList(list) {
+    let temp = list;
+    while (temp) {
+        console.log(temp.value);
+        temp = temp.next;
+    }
+}
+// using recursion.
+function printListRe(list) {
+    let temp = list;
+    console.log(temp.value);
+    if (temp.next) {
+        printListRe(tem.next);
+    }
+}
+
+/** 
+Output a single-linked list in the reverse order
+importance: 5
+Output a single-linked list from the previous task Output a single-linked list in the reverse order.
+
+Make two solutions: using a loop and using a recursion.
+*/
+//Using a loop
+function printListReverse(list) {
+    let valueArr = [];
+    let temp = list;
+    while (temp) {
+        valueArr.push(temp.value);
+        temp = tem.next;
+    }
+    for (let i = 0; i < valueArr.length; i++) {
+        alert(arr[i]);
+    }
+}
+
+console.log(printListReverse(list));

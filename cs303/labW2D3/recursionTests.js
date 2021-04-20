@@ -11,11 +11,11 @@ const factorial = myExports.factorial;
 const fibonacci = myExports.fibonacci;
 
 /* the following are for Thursday */
-const outputList = myExports.outputList;
-const outputListLoop = myExports.outputListLoop;
-const list2Array = myExports.list2Array;
-const reverseList = myExports.reverseList;
-const reverseListLoop = myExports.reverseListLoop;
+// const outputList = myExports.outputList;
+// const outputListLoop = myExports.outputListLoop;
+// const list2Array = myExports.list2Array;
+// const reverseList = myExports.reverseList;
+// const reverseListLoop = myExports.reverseListLoop;
 
 
 let list = {
